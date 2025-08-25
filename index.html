@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name - Portfolio</title>
+    <title id="page-title">Loading...</title>
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
@@ -13,25 +13,13 @@
     <nav class="navbar">
         <div class="nav-container">
             <div class="nav-logo">
-                <a href="#home">YourName</a>
+                <a href="#home" id="nav-logo">Loading...</a>
             </div>
-            <ul class="nav-menu">
-                <li class="nav-item">
-                    <a href="#home" class="nav-link">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#about" class="nav-link">About</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#projects" class="nav-link">Projects</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#skills" class="nav-link">Skills</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#contact" class="nav-link">Contact</a>
-                </li>
-            </ul>
+            <div class="nav-menu">
+                <a href="#work" class="nav-link">Work</a>
+                <a href="#info" class="nav-link">Info</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
             <div class="hamburger">
                 <span class="bar"></span>
                 <span class="bar"></span>
@@ -42,170 +30,62 @@
 
     <!-- Hero Section -->
     <section id="home" class="hero">
-        <div class="hero-container">
-            <div class="hero-content">
+        <div class="hero-content">
+            <div class="hero-text">
                 <h1 class="hero-title">
-                    <span class="gradient-text">Hello, I'm</span>
-                    <span class="hero-name">Your Name</span>
+                    <span class="title-line" id="hero-title-line1">Loading...</span>
+                    <span class="title-line" id="hero-title-line2">Loading...</span>
                 </h1>
-                <p class="hero-subtitle">Full Stack Developer & Creative Coder</p>
-                <p class="hero-description">
-                    I build beautiful, functional, and user-centered digital experiences. 
-                    Passionate about clean code and innovative solutions.
-                </p>
-                <div class="hero-buttons">
-                    <a href="#projects" class="btn btn-primary">View My Work</a>
-                    <a href="#contact" class="btn btn-secondary">Get In Touch</a>
-                </div>
+                <p class="hero-location" id="hero-location">Loading...</p>
+                <p class="hero-time" id="current-time">Loading...</p>
             </div>
             <div class="hero-visual">
-                <div class="floating-card">
-                    <div class="card-content">
+                <div class="floating-element">
+                    <div class="element-content">
                         <i class="fas fa-code"></i>
-                        <span>Code</span>
                     </div>
                 </div>
-                <div class="floating-card">
-                    <div class="card-content">
+                <div class="floating-element">
+                    <div class="element-content">
                         <i class="fas fa-palette"></i>
-                        <span>Design</span>
                     </div>
                 </div>
-                <div class="floating-card">
-                    <div class="card-content">
+                <div class="floating-element">
+                    <div class="element-content">
                         <i class="fas fa-rocket"></i>
-                        <span>Launch</span>
                     </div>
                 </div>
             </div>
         </div>
+        <div class="hero-footer">
+            <p class="craft-text" id="hero-tagline">Loading...</p>
+        </div>
     </section>
 
-    <!-- About Section -->
-    <section id="about" class="about">
+    <!-- Work Section -->
+    <section id="work" class="work">
         <div class="container">
-            <h2 class="section-title">About Me</h2>
-            <div class="about-content">
-                <div class="about-text">
-                    <p>
-                        I'm a passionate developer with a love for creating meaningful digital experiences. 
-                        With expertise in modern web technologies, I focus on building applications that are 
-                        not only functional but also delightful to use.
-                    </p>
-                    <p>
-                        When I'm not coding, you can find me exploring new technologies, contributing to 
-                        open source projects, or sharing knowledge with the developer community.
-                    </p>
-                    <div class="about-stats">
-                        <div class="stat">
-                            <span class="stat-number">3+</span>
-                            <span class="stat-label">Years Experience</span>
-                        </div>
-                        <div class="stat">
-                            <span class="stat-number">50+</span>
-                            <span class="stat-label">Projects Completed</span>
-                        </div>
-                        <div class="stat">
-                            <span class="stat-number">100%</span>
-                            <span class="stat-label">Client Satisfaction</span>
-                        </div>
+            <h2 class="section-title">Work</h2>
+            <div class="work-grid" id="work-grid">
+                <!-- Work items will be dynamically loaded here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Info Section -->
+    <section id="info" class="info">
+        <div class="container">
+            <h2 class="section-title">Info</h2>
+            <div class="info-content">
+                <div class="info-text">
+                    <p class="info-description" id="about-description">Loading...</p>
+                    <div class="info-stats" id="info-stats">
+                        <!-- Stats will be dynamically loaded here -->
                     </div>
                 </div>
-                <div class="about-image">
+                <div class="info-image">
                     <div class="image-placeholder">
                         <i class="fas fa-user"></i>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section id="projects" class="projects">
-        <div class="container">
-            <h2 class="section-title">Featured Projects</h2>
-            <div class="projects-grid">
-                <div class="project-card">
-                    <div class="project-image">
-                        <div class="image-placeholder">
-                            <i class="fas fa-project-diagram"></i>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <h3 class="project-title">Project Name 1</h3>
-                        <p class="project-description">
-                            A modern web application built with React and Node.js. Features include 
-                            real-time updates, responsive design, and seamless user experience.
-                        </p>
-                        <div class="project-tech">
-                            <span class="tech-tag">React</span>
-                            <span class="tech-tag">Node.js</span>
-                            <span class="tech-tag">MongoDB</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="#" class="project-link">
-                                <i class="fab fa-github"></i> Code
-                            </a>
-                            <a href="#" class="project-link">
-                                <i class="fas fa-external-link-alt"></i> Live
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-image">
-                        <div class="image-placeholder">
-                            <i class="fas fa-mobile-alt"></i>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <h3 class="project-title">Project Name 2</h3>
-                        <p class="project-description">
-                            A mobile-first web application with progressive web app capabilities. 
-                            Optimized for performance and offline functionality.
-                        </p>
-                        <div class="project-tech">
-                            <span class="tech-tag">Vue.js</span>
-                            <span class="tech-tag">PWA</span>
-                            <span class="tech-tag">Firebase</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="#" class="project-link">
-                                <i class="fab fa-github"></i> Code
-                            </a>
-                            <a href="#" class="project-link">
-                                <i class="fas fa-external-link-alt"></i> Live
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-image">
-                        <div class="image-placeholder">
-                            <i class="fas fa-chart-line"></i>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <h3 class="project-title">Project Name 3</h3>
-                        <p class="project-description">
-                            A data visualization dashboard with interactive charts and real-time 
-                            data processing capabilities.
-                        </p>
-                        <div class="project-tech">
-                            <span class="tech-tag">D3.js</span>
-                            <span class="tech-tag">Python</span>
-                            <span class="tech-tag">Flask</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="#" class="project-link">
-                                <i class="fab fa-github"></i> Code
-                            </a>
-                            <a href="#" class="project-link">
-                                <i class="fas fa-external-link-alt"></i> Live
-                            </a>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -216,76 +96,8 @@
     <section id="skills" class="skills">
         <div class="container">
             <h2 class="section-title">Skills & Technologies</h2>
-            <div class="skills-grid">
-                <div class="skill-category">
-                    <h3 class="category-title">Frontend</h3>
-                    <div class="skill-items">
-                        <div class="skill-item">
-                            <i class="fab fa-html5"></i>
-                            <span>HTML5</span>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fab fa-css3-alt"></i>
-                            <span>CSS3</span>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fab fa-js-square"></i>
-                            <span>JavaScript</span>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fab fa-react"></i>
-                            <span>React</span>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fab fa-vuejs"></i>
-                            <span>Vue.js</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="skill-category">
-                    <h3 class="category-title">Backend</h3>
-                    <div class="skill-items">
-                        <div class="skill-item">
-                            <i class="fab fa-node-js"></i>
-                            <span>Node.js</span>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fab fa-python"></i>
-                            <span>Python</span>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fas fa-database"></i>
-                            <span>MongoDB</span>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fas fa-server"></i>
-                            <span>Express.js</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="skill-category">
-                    <h3 class="category-title">Tools</h3>
-                    <div class="skill-items">
-                        <div class="skill-item">
-                            <i class="fab fa-git-alt"></i>
-                            <span>Git</span>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fab fa-docker"></i>
-                            <span>Docker</span>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fab fa-aws"></i>
-                            <span>AWS</span>
-                        </div>
-                        <div class="skill-item">
-                            <i class="fas fa-cloud"></i>
-                            <span>Cloud</span>
-                        </div>
-                    </div>
-                </div>
+            <div class="skills-grid" id="skills-grid">
+                <!-- Skills will be dynamically loaded here -->
             </div>
         </div>
     </section>
@@ -293,42 +105,17 @@
     <!-- Contact Section -->
     <section id="contact" class="contact">
         <div class="container">
-            <h2 class="section-title">Get In Touch</h2>
+            <h2 class="section-title">Contact</h2>
             <div class="contact-content">
                 <div class="contact-info">
-                    <h3>Let's work together!</h3>
-                    <p>
-                        I'm always interested in hearing about new opportunities and exciting projects. 
-                        Whether you have a question or just want to say hi, feel free to reach out!
-                    </p>
-                    <div class="contact-methods">
-                        <a href="mailto:your.email@example.com" class="contact-method">
-                            <i class="fas fa-envelope"></i>
-                            <span>your.email@example.com</span>
-                        </a>
-                        <a href="https://github.com/yourusername" class="contact-method">
-                            <i class="fab fa-github"></i>
-                            <span>github.com/yourusername</span>
-                        </a>
-                        <a href="https://linkedin.com/in/yourusername" class="contact-method">
-                            <i class="fab fa-linkedin"></i>
-                            <span>linkedin.com/in/yourusername</span>
-                        </a>
+                    <h3 id="contact-heading">Loading...</h3>
+                    <p id="contact-message">Loading...</p>
+                    <div class="contact-methods" id="contact-methods">
+                        <!-- Contact methods will be dynamically loaded here -->
                     </div>
                 </div>
-                <div class="contact-form">
-                    <form>
-                        <div class="form-group">
-                            <input type="text" id="name" name="name" placeholder="Your Name" required>
-                        </div>
-                        <div class="form-group">
-                            <input type="email" id="email" name="email" placeholder="Your Email" required>
-                        </div>
-                        <div class="form-group">
-                            <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary">Send Message</button>
-                    </form>
+                <div class="contact-form" id="contact-form">
+                    <!-- Contact form will be dynamically loaded here -->
                 </div>
             </div>
         </div>
@@ -338,17 +125,17 @@
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
-                <p>&copy; 2024 Your Name. All rights reserved.</p>
-                <div class="footer-links">
-                    <a href="#home">Home</a>
-                    <a href="#about">About</a>
-                    <a href="#projects">Projects</a>
-                    <a href="#contact">Contact</a>
+                <p class="footer-location" id="footer-location">Loading...</p>
+                <div class="footer-links" id="footer-links">
+                    <!-- Footer links will be dynamically loaded here -->
                 </div>
+                <p class="footer-copyright" id="footer-copyright">Loading...</p>
             </div>
         </div>
     </footer>
 
+    <!-- Load configuration first, then scripts -->
+    <script src="config.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
