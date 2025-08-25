@@ -124,7 +124,7 @@ const PORTFOLIO_CONFIG = {
 
     // Page Settings
     settings: {
-        showTime: true, // Show current time in hero section
+        showTime: false, // Show current time in hero section
         showStats: true, // Show statistics in about section
         showSkills: true, // Show skills section
         enableAnimations: true, // Enable smooth animations
